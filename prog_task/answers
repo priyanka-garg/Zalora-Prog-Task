@@ -1,37 +1,7 @@
-1) 
-a. for a in array[0] + array[1]: print a
-
-b. 
-f = open('top10_sample.csv', 'r')
-brand_count = {}
-for l in f:
-	l = l.rstrip()
-	brand_count[l] = brand_count[l] + 1 if l in brand_count else 1 
-
-for b,c in sorted(brand_count.items(), key=lambda b_c: b_c[1]):
-	print b, c
-	
-
-2)
-
-c) 
-select sum(Visits) from reporting.items where date = '2013-01-12'
-select sum(Visits), year(date) as y from reporting.items groupby y
-d) 
-grant all on sales.* to buying
-
-3)
-a) echo "get webtrekk_marketing* /home/Marketing\ Report/Data/" | sftp -P 22 helloFTP:word@10.11.12.13 
-   python /home/Marketing Report/Scripts/ZMR.py
-   source /home/Marketing Report/Scripts/UpdateWebtrekk.sql | mysql -h10.11.12.13 -P5439 -uhelloDB -pworld zalora 
-   
-   write all the command in a simple shell script .. lets call it daily_run.sh
+2a)
+2b)
+3a)
    use crontab -e 
-   and write "35 2 * * * /home/Marketing Report/daily_run.sh"
-b)
-
-- for l in `ls zalora-*`; do mv $l Z${l:1} ;done
-- for l in `ls Zalora-*`; do cat $l | tr '[:lower:]' '[:upper:]' > $l ;done
-- for l in `ls Zalora-*`; do cat $l | sed -e 's/\.//g' > $l ;done
+   and write "35 2 * * * 3a.sh"
 
 
