@@ -1,0 +1,4 @@
+2 a) Database in MySQL is a collection of tables which may have relational dependencies among themselves. 
+   
+   b)Unlike tables, views are not stored physically on disk. Data can't be modified using views.
+

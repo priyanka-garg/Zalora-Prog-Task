@@ -1,0 +1,3 @@
+To schedule the cron job,use crontab -e 
+   and write "35 2 * * * 3a.sh"
+
